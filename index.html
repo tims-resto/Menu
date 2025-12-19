@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim's Resto - Menu Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .category-scroll::-webkit-scrollbar { display: none; }
+        .category-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="bg-black text-white p-6 text-center shadow-lg">
+        <h1 class="text-3xl font-bold text-orange-500">TIM'S RESTO</h1>
+        <p class="text-sm text-gray-300 italic uppercase tracking-widest">L'excellence au menu</p>
+    </header>
+
+    <nav class="sticky top-0 bg-white shadow-md z-10 overflow-x-auto category-scroll flex whitespace-nowrap p-3 border-b border-orange-100">
+        <a href="#burgers" class="mx-2 px-4 py-2 bg-orange-500 text-white rounded-full text-sm font-semibold">Burgers & Chawarmas</a>
+        <a href="#africain" class="mx-2 px-4 py-2 bg-gray-100 hover:bg-orange-100 rounded-full text-sm font-semibold">Plats Africains</a>
+        <a href="#accompagnements" class="mx-2 px-4 py-2 bg-gray-100 hover:bg-orange-100 rounded-full text-sm font-semibold">Accompagnements</a>
+        <a href="#boissons" class="mx-2 px-4 py-2 bg-gray-100 hover:bg-orange-100 rounded-full text-sm font-semibold">Boissons</a>
+    </nav>
+
+    <div class="max-w-md mx-auto p-4 space-y-10">
+
+        <section id="burgers">
+            <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">Burgers & Chawarmas</h2>
+            <div class="grid gap-6">
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <img src="burger.jpg" alt="Burger" class="w-full h-48 object-cover">
+                    <div class="p-4 flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">Burger Classic</h3>
+                            <p class="text-xs text-gray-500">Boeuf grillé, fromage, frites</p>
+                        </div>
+                        <span class="text-orange-600 font-bold">2 500 F</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                    <img src="takos.jpg" alt="Tacos" class="w-full h-48 object-cover">
+                    <div class="p-4 flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">Tacos Mixte</h3>
+                            <p class="text-xs text-gray-500">Poulet, viande, sauce fromagère</p>
+                        </div>
+                        <span class="text-orange-600 font-bold">3 000 F</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="africain">
+            <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">Plats Africains</h2>
+            <div class="grid gap-4">
+                <div class="flex items-center bg-white p-3 rounded-xl shadow-sm border border-gray-100">
+                    <img src="poulet.jpg" class="w-20 h-20 rounded-lg object-cover">
+                    <div class="ml-4 flex-1">
+                        <h3 class="font-bold">Poulet Braisé / Frit</h3>
+                        <p class="text-orange-600 font-bold mt-1 text-sm">4 000 FCFA</p>
+                    </div>
+                </div>
+                <div class="flex items-center bg-white p-3 rounded-xl shadow-sm border border-gray-100">
+                    <img src="viande.jpg" class="w-20 h-20 rounded-lg object-cover">
+                    <div class="ml-4 flex-1">
+                        <h3 class="font-bold">Brochettes de Boeuf</h3>
+                        <p class="text-orange-600 font-bold mt-1 text-sm">1 500 FCFA (la portion)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="accompagnements" class="bg-orange-50 p-4 rounded-3xl">
+            <h2 class="text-xl font-bold text-center mb-4">Accompagnements</h2>
+            <div class="grid grid-cols-2 gap-3 text-sm">
+                <div class="bg-white p-3 rounded-xl text-center shadow-sm">
+                    <p class="font-semibold">Alloco</p>
+                    <p class="text-orange-600 font-bold">1 000 F</p>
+                </div>
+                <div class="bg-white p-3 rounded-xl text-center shadow-sm">
+                    <p class="font-semibold">Attiéké</p>
+                    <p class="text-orange-600 font-bold">500 F</p>
+                </div>
+                <div class="bg-white p-3 rounded-xl text-center shadow-sm">
+                    <p class="font-semibold">Riz</p>
+                    <p class="text-orange-600 font-bold">500 F</p>
+                </div>
+                <div class="bg-white p-3 rounded-xl text-center shadow-sm">
+                    <p class="font-semibold">Pomme Sautée</p>
+                    <p class="text-orange-600 font-bold">1 000 F</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="boissons" class="pb-24">
+            <h2 class="text-2xl font-bold border-l-4 border-orange-500 pl-3 mb-4">Boissons</h2>
+            <div class="bg-white rounded-xl shadow-sm divide-y divide-gray-100 overflow-hidden border border-gray-100">
+                <div class="p-4 flex justify-between"><span>Sucrerie</span> <span class="font-bold">600 F</span></div>
+                <div class="p-4 flex justify-between"><span>Eau Minérale</span> <span class="font-bold">500 F</span></div>
+                <div class="p-4 flex justify-between"><span>Jus Naturel</span> <span class="font-bold">1 000 F</span></div>
+            </div>
+        </section>
+
+    </div>
+
+    <a href="https://wa.me/225XXXXXXXX" class="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-2xl flex items-center space-x-3 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="font-bold">Commander via WhatsApp</span>
+    </a>
+
+</body>
+</html>
